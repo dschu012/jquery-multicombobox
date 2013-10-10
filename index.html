@@ -35,21 +35,19 @@
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Examples.</h3>
 
-<p>This plugin will take the following select:</p>
-<select id="fruitsExample" multiple="multiple">
-	<option>Apple</option>
-	<option>Orange</option>
-	<option>Banana</option>
-</select>
-<p>and turn it into</p>
+<p>This plugin create an autocomplete multiple select like the one below:</p>
 <select id="fruits" multiple="multiple">
 	<option>Apple</option>
 	<option>Orange</option>
 	<option>Banana</option>
 </select>
+<a id="toggle">Click to hide/show underlying select</a>
 <script>
 	$(document).ready(function() {
 		$("#fruits").multicombobox();
+		$("#toggle").click(function() {
+			$( "#fruits" ).toggle();
+		});
 	});
 </script>
 <p>using the following code</p>
