@@ -1,8 +1,9 @@
 .ui-multicombobox {
+	position:relative;
     overflow: auto; 
     cursor: text;
-	width: 400px;
-  }
+	width: 400px
+}
   
 .ui-multicombobox input {
   border: 0;
